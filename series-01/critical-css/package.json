@@ -5,11 +5,13 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "critical": "node critical.js"
+    "critical": "node critical.js",
+    "critical:penthouse": "node extract-critical-penthouse.js"
   },
   "dependencies": {
     "critical": "^2.0.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "penthouse": "^2.3.2"
   },
   "author": "Kiran Kalyan <kiransinbox1@gmail.com>",
   "license": "ISC"
