@@ -1,0 +1,16 @@
+{
+  "name": "critical-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "critical": "node critical.js"
+  },
+  "dependencies": {
+    "critical": "^2.0.5",
+    "express": "^4.17.1"
+  },
+  "author": "Kiran Kalyan <kiransinbox1@gmail.com>",
+  "license": "ISC"
+}
