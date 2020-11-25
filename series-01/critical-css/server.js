@@ -24,6 +24,9 @@ app.get("/critical", function (request, response) {
   response.sendFile(__dirname + "/public/index-critical.html");
 });
 
+app.get("/penthouse", function (request, response) {
+  response.sendFile(__dirname + "/public/index-penthouse.html");
+});
 // listen for requests :)
 var listener = app.listen(3000, function () {
   console.log("Your app is listening on port " + listener.address().port);
