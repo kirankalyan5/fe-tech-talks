@@ -1,0 +1,119 @@
+<!-- 
+  Copyright 2019 Google LLC.
+  SPDX-License-Identifier: Apache-2.0
+-->
+
+<!doctype html>
+<html>
+	<head>
+		  <meta charset="UTF-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+      <style>
+        html, body { 
+          min-height: 100%; 
+        }
+
+        body {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        .offer-block {
+          text-align: center;
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        .offer-text {
+          padding-top: 8px;
+          margin-top: 0;
+          margin-bottom: 20px;
+          color: white;
+          font-weight: bold;
+        }
+
+        .buy-btn {
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+            background: rgba(255,255,255,.3);
+            color: white;
+            border: 1px solid #fff;
+            padding: 0.75em 0.75em;
+        }
+        
+        /* Grow effect for button from Hover.css */
+        .hvr-grow {
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateZ(0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          backface-visibility: hidden;
+          -moz-osx-font-smoothing: grayscale;
+          transition-duration: 0.3s;
+          transition-property: transform;
+        }
+
+        .hvr-grow:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+          transform: scale(1.1);
+        }
+        
+        .mobile-break { 
+          display: none; 
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                background-image: url(img/background-landing-mobile.jpeg);
+            }
+            
+            .offer-text {
+                font-size: 25px;
+            }
+          
+            .buy-btn {
+              font-size: 15px;       
+            }
+          
+            .mobile-break { 
+              display: block;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 1024px) {
+            body {
+                background-image: url(img/background-landing-tablet.jpeg);
+            }
+          
+            .offer-text {
+                font-size: 40px;
+            }
+        }
+
+        @media (min-width: 1025px) {
+          body {
+            background-image: url(img/background-landing-desktop.jpeg);
+          }
+          
+          .offer-text {
+              font-size: 40px;
+          }          
+        }
+        
+      </style>
+    
+	</head>
+	<body>
+			<div class="offer-block">
+        <p class="offer-text">Our best-selling t-shirt <br class="mobile-break"> is 50% off</p>
+        <a class="buy-btn hvr-grow" href="/product-details.html">Buy now</a>
+      </div>
+	</body>
+</html>
