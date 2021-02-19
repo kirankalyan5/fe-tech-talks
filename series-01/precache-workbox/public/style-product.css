@@ -1,0 +1,129 @@
+/**
+ * Copyright 2019 Google LLC.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+.product {
+     color: #000000;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 300;
+}
+.product-image {
+     box-sizing: border-box;
+     width: 100%;
+     margin: 0;
+     box-sizing: border-box;
+     padding: 1.5rem;
+     height: auto;
+}
+.product-image img {
+     width: 100%;
+}
+.product-detail {
+     width: 100%;
+     box-sizing: border-box;
+     padding: 1.5rem;
+     order: 1;
+}
+.add-to-cart-btn {
+     text-align: center;
+     padding: 0.5rem 1rem;
+     background-color: #000000;
+     font-size: 20px;
+     letter-spacing: 1px;
+     cursor: pointer;
+     color: #FFF;
+}
+.add-to-cart-btn:hover {
+     background-color: #404040;
+}
+.product-name {
+     letter-spacing: 1px;
+     font-weight: 300;
+     margin-top: 0.75rem;
+     margin-bottom: 0.25rem;
+     font-size: 2.25rem;
+}
+.product-price {
+     font-size: 2rem;
+     font-weight: 700;
+     margin-top: 0.25rem;
+     margin-bottom: 0;
+}
+.product-color {
+     width: 30px;
+     height: 20px;
+     margin-right: .5rem;
+}
+[type=radio] {
+     position: absolute;
+     opacity: 0;
+     width: 0;
+     height: 0;
+}
+[type=radio] + img {
+     cursor: pointer;
+}
+[type=radio]:checked + img {
+     outline: 2px solid #C0C0C0;
+}
+[type=radio]:checked + button {
+     outline: 2px solid #C0C0C0;
+}
+.product-size {
+     list-style-type:none;
+     margin:25px 0 0 0;
+     padding:0;
+}
+.product-size li {
+     float:left;
+     margin:0 5px 0 0;
+     width:80px;
+     height:30px;
+     position:relative;
+     font-size:15px;
+     text-align: center;
+}
+.product-size label, .product-size input {
+     display:block;
+     position:absolute;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+}
+.product-size input[type="radio"] {
+     opacity:0.011;
+}
+.product-size input[type="radio"]:checked + label {
+     background:lightgray;
+}
+.product-size label {
+     padding:5px;
+     border:1px solid #CCC;
+     cursor:pointer;
+}
+.product-size label:hover {
+     background:#DDD;
+}
+
+.picker-title {
+  font-size:18px;
+}
+
+.section-break {
+  border: 0.5px solid #DCDCDC;
+}
+
+@media screen and (min-width: 800px) {
+     .product {
+         display: flex;
+    }
+     .product-image {
+         width: 55%;
+    }
+     .product-detail {
+         width: 55%;
+         float: right;
+    }
+}
